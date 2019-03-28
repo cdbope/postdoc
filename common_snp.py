@@ -15,7 +15,7 @@ print "Reading %s"%file1.name
 for line in file1:
         if not line.strip(): continue
         data = [s.strip() for s in line.split()] #remove space
-        if data[-1] in rows:
+        if data[1] in rows:
                 rows[data[-1]].append(data[:-1])
         else:
                 rows[data[-1]]=[data[:-1]]
