@@ -9,7 +9,7 @@ if len(sys.argv) < 2:
 
 INFILENAMES = sys.argv[1:-1]
 OUTFILENAME = sys.argv[-1]
-
+rows = {}
 file1 = open(sys.argv[1])
 print "Reading %s"%file1.name
 for line in file1:
